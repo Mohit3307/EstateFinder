@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore Properties - EstateFinder</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f9fa; }
+    h1, h2, h3 { margin: 0; }
+    a { text-decoration: none; color: inherit; }
+    .navbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 20px; background-color: #007BFF; color: white; }
+    .logo { font-size: 24px; font-weight: bold; }
+    .nav-links { list-style: none; display: flex; gap: 20px; flex-wrap: wrap; }
+    .nav-links li a { color: white; font-weight: bold; }
+    .user-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn-login, .btn-post { padding: 10px 20px; border-radius: 5px; background-color: white; color: #007BFF; font-weight: bold; }
+    .explore-container { padding: 40px 20px; }
+    h1 { text-align: center; color: #333; margin-bottom: 40px; }
+    .property-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; justify-items: center; }
+    .property-card { width: 100%; max-width: 300px; background-color: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); text-align: center; padding-bottom: 10px; }
+    .property-card img { width: 100%; height: 200px; object-fit: cover; }
+    .property-card h3 { margin: 15px; font-size: 20px; color: #007BFF; }
+    .property-card p { margin: 0 15px 10px; color: #555; }
+    .property-card ul { margin: 10px 15px; padding-left: 20px; color: #555; text-align: left; }
+    .btn-buy {
+      display: inline-block;
+      margin: 10px auto;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .btn-buy:hover {
+      background-color: #0056b3;
+    }
+    .footer { background-color: #333; color: white; padding: 40px 20px; }
+    .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    .footer-section h3 { margin-bottom: 10px; }
+    .footer-section ul { list-style: none; padding: 0; }
+    .footer-section ul li { margin: 5px 0; }
+    .social-icons { display: flex; gap: 15px; }
+    .social-icons img { width: 24px; height: 24px; transition: transform 0.3s; }
+    .social-icons img:hover { transform: scale(1.1); }
+    .footer-bottom { text-align: center; margin-top: 20px; padding-top: 10px; border-top: 1px solid #555; }
+    @media (max-width: 768px) {
+      .navbar { flex-direction: column; align-items: flex-start; }
+      .nav-links { flex-direction: column; gap: 10px; margin-top: 10px; }
+      .user-actions { margin-top: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">EstateFinder</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="rent.html">Rent</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+  <div class="user-actions">
+    <a href="login.html" class="btn-login">Login</a>
+    <a href="post_property.html" class="btn-post">Post Property</a>
+  </div>
+</nav>
+
+<!-- Explore Properties -->
+<div class="explore-container">
+  <h1>Explore Properties</h1>
+  <div class="property-grid">
+
+    <!-- Property 1 -->
+    <div class="property-card">
+      <img src="https://dressyourhome.in/wp-content/uploads/IMG-3220.jpg" alt="2 BHK Apartment">
+      <h3>2 BHK Apartment - ₹1.2 Cr</h3>
+      <p>Mumbai</p>
+      <ul>
+        <li>Fully Furnished</li>
+        <li>Near Metro Station</li>
+        <li>Parking included</li>
+      </ul>
+      <a href="contact_seller.html" class="btn-buy">Contact Seller</a>
+    </div>
+
+    <!-- Property 2 -->
+    <div class="property-card">
+      <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/456081797.jpg?k=80a2a544765b1338ec90739c9ba44f009e3cc9758ed04f007a46d52f4d114c56&o=" alt="2 BHK Flat">
+      <h3>2 BHK Flat - ₹90 Lakhs</h3>
+      <p>Bangalore</p>
+      <ul>
+        <li>Modern design</li>
+        <li>Close to Tech Parks</li>
+        <li>24/7 Security and Power Backup</li>
+      </ul>
+       <a href="contact_seller.html" class="btn-buy">Contact Seller</a>
+    </div>
+
+    <!-- Property 3 -->
+    <div class="property-card">
+      <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/555071355.jpg?k=3e1238b8174e87f5a4bc5a4641dbbf34fdd2f010e4ba973d609324dafaab95f5&o=&hp=1" alt="3 BHK House">
+      <h3>3 BHK House - ₹3 Cr</h3>
+      <p>Delhi</p>
+      <ul>
+        <li>Spacious 3-floor layout</li>
+        <li>Modular Kitchen</li>
+        <li>Near Schools and Markets</li>
+      </ul>
+        <a href="contact_seller.html" class="btn-buy">Contact Seller</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3938/3938026.png" alt="YouTube"></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form action="#" method="post">
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 EstateFinder. All rights reserved.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>

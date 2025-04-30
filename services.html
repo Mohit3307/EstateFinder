@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - EstateFinder</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f9fa; }
+    h1, h2, h3 { margin: 0; }
+    a { text-decoration: none; color: inherit; }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px;
+      background-color: #007BFF;
+      color: white;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links li a {
+      color: white;
+      font-weight: bold;
+      padding: 5px 0;
+    }
+
+    .user-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .btn-login, .btn-post {
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: white;
+      color: #007BFF;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn-login:hover, .btn-post:hover {
+      background-color: #e6e6e6;
+    } }
+    
+    .services-container {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .services-container h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    
+    .service-card {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    
+    .service-card img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+    }
+    
+    .service-card h3 {
+      color: #007BFF;
+      margin-bottom: 15px;
+    }
+    
+    .service-card p {
+      color: #555;
+      line-height: 1.6;
+    }
+    
+    .btn-learn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 5px;
+    }
+    
+    .footer { background-color: #333; color: white; padding: 40px 20px; }
+    .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    .footer-section h3 { margin-bottom: 10px; }
+    .footer-section ul { list-style: none; padding: 0; }
+    .footer-section ul li { margin: 5px 0; }
+    .social-icons { display: flex; gap: 15px; }
+    .social-icons img { width: 24px; height: 24px; transition: transform 0.3s; }
+    .social-icons img:hover { transform: scale(1.1); }
+    .footer-bottom { text-align: center; margin-top: 20px; padding-top: 10px; border-top: 1px solid #555; }
+    
+    @media (max-width: 768px) {
+      .navbar { flex-direction: column; align-items: flex-start; }
+      .nav-links { flex-direction: column; gap: 10px; margin-top: 10px; }
+      .user-actions { margin-top: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">EstateFinder</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="rent.html">Rent</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+  <div class="user-actions">
+    <a href="login.html" class="btn-login">Login</a>
+    <a href="post_property.html" class="btn-post">Post Property</a>
+  </div>
+</nav>
+
+<!-- Services Section -->
+<div class="services-container">
+  <h1>Our Services</h1>
+  
+  <div class="services-grid">
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1570/1570887.png" alt="Property Valuation">
+      <h3>Property Valuation</h3>
+      <p>Get accurate market valuations for your property from our certified experts to ensure you get the best price.</p>
+      <a href="#" class="btn-learn">Learn More</a>
+    </div>
+    
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3652/3652191.png" alt="Legal Assistance">
+      <h3>Legal Assistance</h3>
+      <p>Our legal experts help with documentation, registration, and all legal formalities for smooth transactions.</p>
+      <a href="#" class="btn-learn">Learn More</a>
+    </div>
+    
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1570/1570931.png" alt="Home Loans">
+      <h3>Home Loans</h3>
+      <p>Partnered with leading banks to provide you with the best home loan options at competitive interest rates.</p>
+      <a href="#" class="btn-learn">Learn More</a>
+    </div>
+    
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3022/3022855.png" alt="Interior Design">
+      <h3>Interior Design</h3>
+      <p>Transform your space with our professional interior design services tailored to your style and budget.</p>
+      <a href="#" class="btn-learn">Learn More</a>
+    </div>
+    
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="Property Management">
+      <h3>Property Management</h3>
+      <p>Comprehensive property management services for landlords including tenant screening and maintenance.</p>
+      <a href="#" class="btn-learn">Learn More</a>
+    </div>
+    
+    <div class="service-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Relocation Services">
+      <h3>Relocation Services</h3>
+      <p>Stress-free relocation services including packing, moving, and settling into your new home.</p>
+      <a href="#" class="btn-learn">Learn More</a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3938/3938026.png" alt="YouTube"></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form action="#" method="post">
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 EstateFinder. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
